@@ -1,8 +1,9 @@
+X = Saloni
 compile: main.c 
-	 gcc main.c -o ming
+	 gcc main.c -o $(X)
 
-run: ming
-	 ./ming
+run: $(X)
+	 ./$(X)
 
-clean: ming
-	 rm ming
+clean: $(X)
+	 rm  $(X)
